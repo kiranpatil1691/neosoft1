@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>InventoryManagementSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>supplierMain.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- main page servlet -->
+   <servlet>
+  		<servlet-name>MainPageView</servlet-name>
+  		<servlet-class>com.ims.suppliercontroller.SupplierController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>MainPageView</servlet-name>
+  		<url-pattern>/mainPage</url-pattern>
+  </servlet-mapping>
+  
+  <!-- insert page servlet  -->
+  <servlet>
+  		<servlet-name>insertPageView</servlet-name>
+  		<servlet-class>com.ims.suppliercontroller.SupplierController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>insertPageView</servlet-name>
+  		<url-pattern>/insert</url-pattern>
+  </servlet-mapping> 
+  
+  <!--update page servlet  -->
+  <servlet>
+  <servlet-name>update</servlet-name>
+  <servlet-class>com.ims.suppliercontroller.SupplierController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>update</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping> 
+ 
+  <!--delete page servlet  -->
+<servlet>
+  <servlet-name>delete</servlet-name>
+  <servlet-class>com.ims.suppliercontroller.SupplierController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>delete</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <!-- view page servlet -->
+  <servlet>
+  <servlet-name>SupplierController</servlet-name>
+  <servlet-class>com.ims.suppliercontroller.SupplierController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SupplierController</servlet-name>
+  <url-pattern>/SupplierController</url-pattern>
+  </servlet-mapping>
+  </web-app>
